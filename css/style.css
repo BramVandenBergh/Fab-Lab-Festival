@@ -1,0 +1,1116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+button:active {
+    border: none;
+    outline: none;
+}
+
+/* ================================= NAV =================================== */
+
+.navbar__spacemaker {
+    height: 40rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.header {
+    z-index: 20;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100vw;
+}
+
+.menu__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 96rem;
+    padding-top: 2rem;
+}
+
+.menu__items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    transition: color ease 0.2s;
+}
+
+.menu__link:hover {
+    color: #32A4FC;
+    transition: color ease 0.2s;
+}
+
+.menu__link--active {
+    color: #32A4FC;
+    transition: color ease 0.2s;
+}
+
+.menu__link--active:hover {
+    color: #2d2d2d;
+    transition: color ease 0.2s;
+}
+
+.menu__item {
+    margin-top: -10rem;
+}
+
+/* ===================================== FOOTER ====================================== */
+
+.footer {
+    background-color: #2d2d2d;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: white;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    margin-top: 10rem;
+    font-weight: 900;
+}
+
+/* ===================================== HOME ======================================= */
+
+.home__subtitle {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #B5B5B5;
+    opacity: 0.3;
+    font-size: 7rem;
+}
+
+.intro__image {
+    width: 40rem;
+    margin-left: 6rem;
+}
+
+.intro__container {
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    width: 96rem;
+}
+
+.intro__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #2d2d2d;
+    line-height: 2;
+    width: 60rem;
+}
+
+.wavyline {
+    background-image: url("../assets/img/wavyline.svg");
+    background-repeat: no-repeat;
+    background-position-y: 4.5rem;
+    padding-bottom: 2rem;
+}
+
+.bluetext {
+    color: #32A4FC;
+    text-transform: uppercase;
+}
+
+.intro__scroll {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 10rem 0;
+}
+
+.intropart2__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intropart2__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #2d2d2d;
+    line-height: 2;
+    width: 60rem;
+    margin-top: -2rem;
+}
+
+.intropart2__image {
+    width: 40rem;
+    margin-right: 8rem;
+}
+
+.curvyline {
+    background-image: url("../assets/img/curvyline.svg");
+    background-repeat: no-repeat;
+    background-position-y: 5rem;
+    background-size: 100%;
+    padding-bottom: 4rem;
+}
+
+.viewcart {
+    float: right;
+    margin-top: -28rem;
+    margin-right: 5rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #2d2d2d;
+    transition: color ease 0.2s;
+}
+
+.viewcart:hover {
+    color: #32A4FC;
+    transition: color ease 0.2s;
+}
+
+.locations {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.locations div {
+    width: 86rem;
+}
+
+.locations__map {
+    width: 86rem;
+}
+
+.locations__title {
+    margin-bottom: 5rem;
+}
+
+.intermezzo {
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+}
+
+.about__logo {
+    width: 30rem;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about__wrapper {
+    width: 86rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__innerwrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.about__part {
+    display: flex;
+    align-items: center;
+}
+
+.about__part p span {
+    color: #32A4FC;
+}
+
+.about__part p {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.about__part__text--big {
+    font-size: 5rem;
+    color: #2d2d2d;
+}
+
+.about__part__text--small {
+    color: #B5B5B5;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.about__part3,
+.about__part2 {
+    margin-top: 2rem;
+}
+
+.about__innerwrapper--top p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 3.5rem;
+    color: #2d2d2d;
+}
+
+.tickets img {
+    width: 25rem;
+}
+
+.tickets {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 5rem;
+}
+
+.tickets__wrapper {
+    width: 86rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tickets__wrapper img {
+    margin-left: 3rem;
+}
+
+.tickets__innerwrapper {
+    font-family: "Quicksand", sans-serif;
+    margin-right: 3rem;
+    color: #2d2d2d;
+}
+
+.tickets__innerwrapper p span {
+    color: #32A4FC;
+}
+
+.tickets__innerwrapper--top {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.tickets__innerwrapper--bottom {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.tickets__innerwrapper--bottom span {
+    font-family: "Roboto", sans-serif;
+}
+
+.tickets__part2__wrapper {
+    margin-top: 5rem;
+}
+
+.tickets__part2__innerwrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.tickets__part2__innerwrapper {
+    font-family: "Quicksand", sans-serif;
+    color: #2d2d2d;
+}
+
+.tickets__part2__innerwrapper p span {
+    color: #32A4FC;
+}
+
+.tickets__part2__innerwrapper--top {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.tickets__part2__innerwrapper--bottom {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.tickets__button {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    background-color: #32A4FC;
+    padding: 1.2rem 8rem 1.2rem 8rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.contactless::after {
+    content: url("../assets/img/contactless.svg");
+    margin-left: 5rem;
+}
+
+.contactless {
+    display: flex;
+}
+
+.cashless {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cashless__container {
+    width: 86rem;
+}
+
+.cashless__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.cashless__desc {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    line-height: 2.25rem;
+    width: 40rem;
+}
+
+.paymethods {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 7rem 6rem 10rem;
+    grid-gap: 1rem;
+    margin-right: 10rem;
+}
+
+.paymethod__img {
+    height: 4rem;
+}
+
+.visa {
+    width: 7rem;
+    margin-left: -0.5rem;
+}
+
+.eco {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.eco__wrapper {
+    width: 86rem;
+}
+
+.eco__title {
+    font-size: 6rem;
+    text-align: right;
+}
+
+.eco__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
+.eco__desc {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    line-height: 2.25rem;
+    width: 44rem;
+    padding-bottom: 1rem;
+}
+
+.eco__img {
+    height: 15rem;
+    margin-left: 14rem;
+}
+
+/* ============================ TRUCKS =============================== */
+
+.mainstage {
+    margin-top: -6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mainstage__wrapper {
+    width: 96rem;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 3rem;
+    -webkit-box-shadow: 0px 19px 33px -12px rgba(45, 45, 45, 0.7);
+    -moz-box-shadow: 0px 19px 33px -12px rgba(45, 45, 45, 0.7);
+    box-shadow: 0px 19px 33px -12px rgba(45, 45, 45, 0.7);
+}
+
+.mainstage__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainstage__container--block1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.mainstage__title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    color: #32A4FC;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.mainstage__desc {
+    width: 45rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: #2d2d2d;
+    line-height: 3rem;
+}
+
+.timetable__title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.timetable__time {
+    width: 45rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: #2d2d2d;
+    line-height: 3rem;
+}
+
+.timetable__time span {
+    opacity: 0;
+}
+
+.mainstage__container--block2 {
+    margin-right: 5rem;
+}
+
+.spotlight__img {
+    width: 30rem;
+}
+
+.spotlight__bullets {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 2rem;
+}
+
+.spotlight__bullet {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #2d2d2d;
+    font-size: 8rem;
+}
+
+.trucks {
+    display: flex;
+    justify-content: center;
+}
+
+.trucks__wrapper {
+    width: 96rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.trucks__truck {
+    width: 40rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.truck__img {
+    width: 20rem;
+    margin-bottom: -5rem;
+    z-index: 1;
+}
+
+.truck__box {
+    width: 45rem;
+    padding: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    background-color: white;
+    border-radius: 3rem;
+    -webkit-box-shadow: 0px 19px 33px -12px rgba(45, 45, 45, 0.7);
+    -moz-box-shadow: 0px 19px 33px -12px rgba(45, 45, 45, 0.7);
+    box-shadow: 0px 19px 33px -12px rgba(45, 45, 45, 0.7);
+}
+
+.truck__title {
+    font-family: "Roboto Condensed";
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+
+.truck__title span {
+    color: #32A4FC;
+}
+
+.truck__catchphrase {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+
+.truck__descr {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    line-height: 2.25rem;
+}
+
+.truck__descr p {
+    margin-top: 2rem;
+}
+
+.truck__descr p em {
+    font-weight: 900;
+}
+
+.truck__cta {
+    margin-top: 8rem;
+}
+
+.cta__line1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+
+.cta__line2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.cta__button {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    background-color: #32A4FC;
+    padding: 1.2rem 8rem 1.2rem 8rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.unique {
+    position: absolute;
+    z-index: 2;
+    margin-left: 22.5rem;
+    margin-top: 8rem;
+    width: 15rem;
+}
+
+/* ====================================== MAP ========================================== */
+
+.map__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.map__map {
+    width: 90rem;
+}
+
+.map__legenda {
+    margin-left: -16rem;
+}
+
+.legenda__items {
+    display: flex;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+}
+
+.legenda__items div li {
+    list-style-type: decimal;
+}
+
+.legenda__item {
+    font-family: "Roboto", sans-serif;
+    color: #2d2d2d;
+    font-size: 2rem;
+    line-height: 3rem;
+
+}
+
+.legenda__link {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+.legenda__part2 {
+    margin-left: 6rem;
+}
+
+.legenda__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    margin-left: -3.5rem;
+}
+
+.legenda__link:hover {
+    color: #32A4FC;
+    transition: color ease 0.2s;
+}
+
+/* =============================== TICKETS ===================================== */
+
+.ticketpage__intro {
+    margin-top: 0;
+    margin-bottom: 10rem;
+}
+
+.ticketpage__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.ticketpage__container {
+    width: 126rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #2d2d2d;
+}
+
+.ticketpage__submitbutton {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    background-color: #32A4FC;
+    padding: 1.2rem 11rem 1.2rem 10rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border: none;
+}
+
+.ticketpage__submitbutton {
+    cursor: pointer;
+}
+
+.ticketpage__part {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 3rem;
+    border: solid 0.4rem #32A4FC;
+    border-radius: 3rem;
+    width: 30rem;
+}
+
+.ticketpage__form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ticketpage__field {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 1rem;
+}
+
+.ticketpage__innerwrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticketpage__subtitle {
+    font-family: "Roboto Condensed";
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+
+.ticketpage__subtitle span {
+    color: #32A4FC;
+}
+
+.ticketpage__desc {
+    margin: 2rem 0 2rem 0;
+}
+
+.ticketpage__part--bottom {
+    margin-top: 8rem;
+}
+
+.ticketpage__price span {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.ticketpage__part--discount {
+    background-color: #32A4FC;
+    color: #ffffff;
+}
+
+.ticketpage__part--discount .ticketpage__subtitle {
+    color: #ffffff;
+}
+.ticketpage__part--discount .ticketpage__subtitle span {
+    color: #2d2d2d;
+}
+
+.ticketpage__part--discount .ticketpage__price span {
+    color: #2d2d2d;
+}
+
+.ticketpage__part--discount .ticketpage__submitbutton {
+    background-color: #2d2d2d;
+}
+
+.discountmarker {
+    font-family: "Roboto Condensed",sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    transform: rotate(20deg);
+}
+
+.discountmarker__wrapper {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+    margin-left: 20rem;
+    margin-top: -11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =================================== TICKET (DETAIL) ========================================== */
+
+.ticketdetail__subtitle {
+    font-family: "Roboto Condensed";
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.1;
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+
+.ticketdetail__subtitle span {
+    color: #32A4FC;
+}
+
+.ticketdetail__part {
+    width: 96rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ticketdetail__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.ticketdetail__desc {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    color: #2d2d2d;
+    width: 50rem;
+    margin-top: 2rem;
+}
+
+.ticketdetail__form {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+}
+
+.ticketdetail__field {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 2rem;
+}
+
+.ticketdetail__price span {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.ticketdetail__submitbutton {    
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    background-color: #32A4FC;
+    padding: 1.2rem 10rem 1.2rem 10rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border: none;
+}
+
+/* =================================== CART ========================================== */
+
+.cart__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cart {
+  width: 106rem;
+  overflow: visible;
+}
+
+.cart img {
+  vertical-align: middle;
+}
+
+.cart tr {
+  border-bottom: 0.4rem solid #f3f3f3;
+}
+
+.cart tbody td {
+  padding: 0.5rem 0;
+}
+
+.cart td {
+  color: #2d2d2d;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.cart .product-image {
+  width: 9rem;
+  font-size: 0;
+}
+
+.cart .product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.cart .product-description {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding-left: 1.6rem;
+}
+
+.cart td {
+  vertical-align: middle;
+}
+
+.cart .price {
+  text-align: center;
+}
+
+.cart .quantity {
+  width: 3.5rem;
+  text-align: center;
+}
+
+.cart .quantity input {
+  text-align: center;
+  border: 0.1rem solid #2d2d2d;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.cart .remove-item {
+  width: 8.9rem;
+  text-align: center;
+}
+
+.cart .total {
+  width: 9.6rem;
+  text-align: right;
+}
+
+.remove-from-cart {
+  width: 6.3rem;
+  padding: 0.7rem 0;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #2d2d2d;
+  background: none;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  text-transform: uppercase;
+  transition: color ease 0.2s;
+}
+
+.remove-from-cart:hover {
+    color: #32A4FC;
+}
+
+.cart .column.one {
+  width: 40rem;
+  float: left;
+}
+
+.cart .column.two {
+  width: 30rem;
+  min-height: 20rem;
+  float: right;
+  text-align: right;
+  position: relative;
+}
+
+.order-total {
+  text-align: right;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #32A4FC;
+  font-family: "Roboto", sans-serif;
+  padding-top: 1rem;
+}
+
+.order-total span {
+  margin: 0 2.4rem 0 0;
+  color: #2d2d2d;
+}
+
+.button__updatecart {
+    margin-top: 4rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2d2d2d;
+    padding: 1.2rem 8rem 1.2rem 8rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 25rem;
+    border: none;
+}
+
+.button__checkout {
+    margin-top: 2rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    background-color: #32A4FC;
+    padding: 1.2rem 8rem 1.2rem 8rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 25rem;
+    border: none;
+
+}
+
+.btn:active {
+    border: none;
+    outline: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.cart .column.two input {
+  padding: 0.7rem 0;
+  position: absolute;
+  right: 0;
+  width: 10.9rem;
+}
+
+.price, .quantity, .total {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #2d2d2d;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.quantitybox {
+    width: 4rem;
+}
